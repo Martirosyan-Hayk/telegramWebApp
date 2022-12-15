@@ -145,3 +145,14 @@ const renderCards = (cards) => {
 {/* <button class="btn" data-cardId=${index} id="btn${index}">Add</button> */ }
 
 cards.innerHTML = renderCards(professions).join``
+
+let usercard = document.getElementById("usercard");
+
+let p = document.createElement("p");
+
+p.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}
+exampled by ${tg.title}`;
+
+usercard.appendChild(p); 
+

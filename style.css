@@ -59,8 +59,10 @@ var(--tg-theme-button-text-color)
     width: 350px;
 }
 
-.usercard {
-	text-align: center;
+.example {
+    text-align: center;
+    color: blue;    
+    display: flex;
 }
 
 .item {

@@ -135,13 +135,13 @@ const renderCards = (cards) => {
     const templatedCards = cards.map((card, index) =>
         `
         <div class="item">
-         <span>${emoji}</span>
-         <span>${card.title}</span>  
+         <span class="emoji">${emoji}</span>
+         <span class="title">${card.title}</span>  
       </div>
       `
     )
     return templatedCards;
 }
-{/* <button class="btn" data-cardId=${index} id="btn${index}">Add</button> */}
+{/* <button class="btn" data-cardId=${index} id="btn${index}">Add</button> */ }
 
 cards.innerHTML = renderCards(professions).join``
